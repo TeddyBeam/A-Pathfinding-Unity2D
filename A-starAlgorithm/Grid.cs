@@ -12,13 +12,7 @@ namespace PathFinding
         [SerializeField] private Vector2 gridWorldSize;
         [SerializeField] private float nodeRadius;
 
-        public int MaxSize
-        {
-            get
-            {
-                return gridSizeX * gridSizeY;
-            }
-        }
+        public int MaxSize { get { return gridSizeX * gridSizeY; } }
 
         private Node[,] grid;
         private float nodeDiameter;
